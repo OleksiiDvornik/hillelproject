@@ -644,27 +644,27 @@ a:hover {
 }
 
 .services__list-item-icon-ecommerce {
-  background-image: url("../img/icons/ecommerce.svg");
+  background-image: url("../img/svgicons/ecommerce.svg");
 }
 
 .services__list-item-icon-support {
-  background-image: url("../img/icons/support.svg");
+  background-image: url("../img/svgicons/support.svg");
 }
 
 .services__list-item-icon-corporate {
-  background-image: url("../img/icons/corporate.svg");
+  background-image: url("../img/svgicons/corporate.svg");
 }
 
 .services__list-item-icon-trust {
-  background-image: url("../img/icons/trust.svg");
+  background-image: url("../img/svgicons/trust.svg");
 }
 
 .services__list-item-icon-protection {
-  background-image: url("../img/icons/protection.svg");
+  background-image: url("../img/svgicons/protection.svg");
 }
 
 .services__list-item-icon-court {
-  background-image: url("../img/icons/court.svg");
+  background-image: url("../img/svgicons/court.svg");
 }
 
 .services__list-item-title {
@@ -1337,15 +1337,15 @@ a:hover {
 }
 
 .introduction__advantages-item-top-1 {
-  background-image: url("../img/icons/experience.svg");
+  background-image: url("../img/svgicons/experience.svg");
 }
 
 .introduction__advantages-item-top-2 {
-  background-image: url("../img/icons/clients.svg");
+  background-image: url("../img/svgicons/clients.svg");
 }
 
 .introduction__advantages-item-top-3 {
-  background-image: url("../img/icons/probono.svg");
+  background-image: url("../img/svgicons/probono.svg");
 }
 
 .introduction__advantages-item-top-title {
