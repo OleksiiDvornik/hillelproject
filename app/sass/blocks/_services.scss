@@ -1,0 +1,106 @@
+.services {
+    padding: 0 15px 59px 15px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradientRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 9px 0 30px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        row-gap: 29px;
+
+        &-item {
+
+            &-icon {
+                width: 92px;
+                height: 92px;
+                background-color: #FFFFFF;
+                border-radius: 24px;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                &-ecommerce {
+                    background-image: url('../img/icons/ecommerce.svg');
+                }
+
+                &-support {
+                    background-image: url('../img/icons/support.svg');
+                }
+
+                &-corporate {
+                    background-image: url('../img/icons/corporate.svg');
+                }
+
+                &-trust {
+                    background-image: url('../img/icons/trust.svg');
+                }
+
+                &-protection {
+                    background-image: url('../img/icons/protection.svg');
+                }
+
+                &-court {
+                    background-image: url('../img/icons/court.svg');
+                }
+            }
+
+            &-title {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: $activeRegular;
+                padding: 30px 0 16px;
+            }
+
+            &-text {
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+
+    .services {
+        padding: 30px 0 58px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            padding: 9px 0 60px;
+        }
+
+        &__list {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 60px;
+            row-gap: 59px;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+
+    .services {
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 60px;
+            row-gap: 59px;
+        }
+    }
+}
+
+
+

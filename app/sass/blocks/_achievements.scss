@@ -1,0 +1,120 @@
+.achievements {
+    padding-top: 30px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $mainRegular;
+        padding-bottom: 30px;
+    }
+
+    &__slider {
+        padding: 0 0 28px;
+        border-bottom: 2px solid $separator;
+        margin: 0 15px;
+
+        &-content {
+            padding-bottom: 29px;
+
+            &-item {
+                display: none;
+
+                &-img {
+                    display: block;
+                    height: 40px;
+                }
+
+                &-mobile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 255px;
+                    height: 90px;
+                    background-color: #FFFFFF;
+                    margin: 0 auto;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+
+    .achievements {
+
+        &__title {
+            padding-bottom: 28px;
+        }
+
+        &__slider {
+            margin: 0;
+
+            &-content {
+                display: flex;
+                margin: 0 -20px;
+
+                &-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 25%;
+                    height: 90px;
+                    background-color: #FFFFFF;
+                    border-radius: 12px;
+                    margin: 0 20px;
+                }
+            }
+
+            &-dots-hidden {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+
+    .achievements {
+        padding-top: 31px;
+
+        &__title {
+            padding-bottom: 29px;
+        }
+
+        &__slider {
+
+            &-content {
+
+                &-item {
+                    height: 110px;
+
+                    &-img {
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media(min-width: 1200px) {
+
+//     .achievements {
+
+//         &__slider {
+
+//             &-content {
+
+//                 &-item {
+//                     width: 25%px;
+//                     height: 110px;
+//                 }
+//             }
+//         }
+//     }
+// }

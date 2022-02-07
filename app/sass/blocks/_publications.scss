@@ -1,0 +1,131 @@
+.publications {
+    padding: 29px 15px 30px;
+    border-bottom: 2px solid $separator;
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradientRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 4px 0 30px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 30px;
+
+        &-item {
+
+            &-img {
+                display: block;
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px 8px 0 0;
+            }
+
+            &-info {
+                background-color: #FFFFFF;
+                padding: 31px 30px 30px;
+                border-radius: 0 0 8px 8px;
+
+                &-title {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding-bottom: 14px;
+                }
+
+                &-date {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $text;
+                    padding-bottom: 15px;
+                    border-bottom: 4px solid $separator;
+                    margin-bottom: 15px;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+
+    .publications {
+        padding: 29px 0 30px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            padding: 10px 0 29px;
+        }
+
+        &__list {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 30px;
+            grid-template-areas: "left right"
+                                 "bottom bottom";
+
+            &-item {
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 200px auto;
+
+                &-1 {
+                    grid-area: left;
+                }
+
+                &-2 {
+                    grid-area: right;
+                }
+
+                &-3 {
+                    grid-area: bottom;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+
+    .publications {
+
+        &__list {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "left center right";
+
+            &-item {
+
+                &-1 {
+                    grid-area: left;
+                }
+
+                &-2 {
+                    grid-area: center;
+                }
+
+                &-3 {
+                    grid-area: right;
+                }
+            }
+        }
+    }
+}
+

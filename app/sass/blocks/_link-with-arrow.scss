@@ -1,0 +1,23 @@
+
+.link-with-arrow {
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: $activeRegular;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link-with-arrow:hover {
+    color: $activeHover;
+}
+
+.link-with-arrow svg {
+    margin: 1px 0 0 2px;
+}
+
+.link-with-arrow:hover path {
+    stroke: $activeHover;
+}

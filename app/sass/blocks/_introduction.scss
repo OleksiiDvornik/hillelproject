@@ -1,0 +1,198 @@
+.introduction {
+    padding: 10px 0px 30px;
+
+    &__wrapper {
+        padding: 0 15px 0;
+    }
+
+    &__info {
+        padding-bottom: 10px;
+
+        &-title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            background: $gradientRedText;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-bottom: 30px;
+
+            &:last-child {
+                padding-bottom: 30px;
+            }
+        }
+
+        &-text {
+            font-size: 19px;
+            line-height: 30px;
+            color: #000000;
+            padding-bottom: 19px;
+
+            &:last-child {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    &__advantages {
+        border-left: 4px solid $separator;
+        padding-left: 30px;
+
+        &-item {
+            margin: 0 0 40px;
+
+            &:last-child {
+                margin: 0 0 30px;
+            }
+
+            &-top {
+                background-size: 32px 32px;
+                background-repeat: no-repeat;
+                background-position: left center;
+                margin-bottom: 10px;
+
+                &-1 {
+                    background-image: url('../img/icons/experience.svg');
+                }
+
+                &-2 {
+                    background-image: url('../img/icons/clients.svg');
+                }
+
+                &-3 {
+                    background-image: url('../img/icons/probono.svg');
+                }
+
+                &-title {
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 44px;
+                    background: $gradientRedText;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding-left: 40px;
+                }
+            }
+
+            &-text {
+                font-size: 16px;
+                line-height: 20px;
+                color: $mainRegular;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .introduction {
+        padding: 10px 0px 30px;
+
+        &__wrapper {
+            padding: 0 0 0;
+        }
+
+        &__info {
+
+            &-title {
+                font-size: 38px;
+                line-height: 46px;
+                padding-top: 40px;
+
+                &:last-child {
+                    padding-top: 2px;
+                }
+            }
+        }
+
+        &__advantages {
+
+            &-item {
+
+                &:last-child {
+                    margin: 0 0 59px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .introduction {
+
+        &__wrapper {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &__info {
+            width: 57%;
+            padding-right: 30px;
+
+            &-title {
+                font-size: 38px;
+                line-height: 46px;
+                padding-top: 35px;
+                padding-bottom: 28px;
+
+                &:last-child {
+                    width: 43%;
+                    padding-top: 0px;
+                    padding-left: 27px;
+                }
+            }
+        }
+
+        &__advantages {
+            width: 43%;
+            margin-top: 34px;
+
+            &-item {
+
+                &:last-child {
+                    margin: 0 0 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction {
+
+        &__wrapper {
+            display: flex;
+            align-items: flex-start;
+            padding: 0 120px;
+        }
+
+        &__info {
+            width: 64%;
+
+            &-title {
+                font-size: 38px;
+                line-height: 46px;
+                padding-top: 35px;
+                padding-bottom: 28px;
+
+                &:last-child {
+                    width: 36%;
+                    padding-top: 0px;
+                    padding-left: 27px;
+                }
+            }
+        }
+
+        &__advantages {
+            width: 36%;
+
+            &-item {
+
+                &:last-child {
+                    margin: 0 0 0px;
+                }
+            }
+        }
+    }
+}

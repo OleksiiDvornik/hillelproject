@@ -1,0 +1,303 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: auto auto;
+    grid-template-areas: "top top"
+                         "logo menu";
+    position: relative;
+    z-index: 2;
+
+    &__top {
+        grid-area: top;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__lang-list {
+        display: flex;
+        padding: 10px 0;
+
+        &-item {
+            display: block;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 5px 7px;
+            border-radius: 8px;
+            transition-duration: 300ms;
+            transition-property: background-color;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #FFFFFF;
+            }
+
+            &--grey {
+                color: $text;
+
+                &:hover {
+                    color: $mainAccent;
+                }
+            }
+        }
+
+        &-item.active {
+            color: #FFFFFF;
+            background-color: $mainAccent;
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &-link {
+            font-size: 0;
+        }
+
+        &-slash {
+            width: 12px;
+            height: 26px;
+            margin-left: 3px;
+            margin-right: 4px;
+        }
+
+        &-breadcrumb {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            color: $mainRegular;
+        }
+    }
+
+    &__menu {
+        grid-area: menu;
+        align-self: center;
+    }
+
+    &__address {
+        display: none;
+    }
+
+    &__fb-link {
+        display: none;
+    }
+
+    &__menu {
+
+        &-hamburger {
+            width: 32px;
+            height: 32px;
+            border: none;
+            text-align: center;
+            background-color: rgba($color: #FFFFFF, $alpha: 0.0);
+            padding: 0;
+            margin: 0;
+        }
+
+        &-hamburger:hover {
+            cursor: pointer;
+        }
+
+        &-hamburger.active {
+            background-color: $separator;
+            border-radius: 8px;
+        }
+
+        &-hamburger.active path {
+            stroke: #323264;
+        }
+
+        &-list {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .header {
+        padding: 40px 0 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "top"
+                             "logo"
+                             "menu";
+
+        &__top {
+                justify-content: flex-start;
+            }
+
+        &__logo {
+            padding-top: 20px;
+            padding-bottom: 10gitpx;
+
+            &-img {
+                width: 132px;
+                height: 62px;
+            }
+
+            &-slash {
+                width: 21px;
+                height: 47px;
+                margin-left: 3px;
+                margin-right: 4px;
+            }
+
+            &-breadcrumb {
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 44px;
+                color: $mainRegular;
+            }
+        }
+
+        &__address {
+            display: block;
+            color: #B3B3BA;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $separator;
+                margin: 0 6px 2px 6px;
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $separator;
+                margin: 0 6px 2px 6px;
+            }
+        }
+
+        &__tel {
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $separator;
+                margin: 0 6px 2px 6px;
+            }
+        }
+
+        &__fb-link {
+            display: inline-block;
+            font-size: 0;
+
+            &:hover path {
+                fill: $mainAccent;
+            }
+        }
+
+        &__fb-link path {
+            transition-duration: 300ms;
+            transition-property: fill;
+        }
+
+        &__menu {
+
+            &-hamburger{
+                display: none;
+            }
+
+            &-list {
+                display: flex;
+                margin: 0;
+                padding: 14px 0 0;
+                list-style-type: none;
+
+                &-item {
+                    display: inline-block;
+                    margin-right: 16px;
+
+                    &-link {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #FFFFFF;
+
+                        &:hover {
+                            border-bottom: 2px solid $mainAccent;
+                        }
+
+                        &--blue {
+                            color: $activeRegular;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .header {
+        padding-top: 43px;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "logo top"
+                             "logo menu";
+
+        &__top {
+            justify-content: flex-end;
+        }
+
+        &__lang-list {
+            padding: 0;
+        }
+
+        &__address {
+
+            &::before {
+                margin: 0 5px 2px 5px;
+            }
+
+            &::after {
+                margin: 0 5px 2px 5px;
+            }
+        }
+
+        &__tel {
+
+            &::after {
+                margin: 0 6px 2px 6px;
+            }
+        }
+
+        &__logo {
+            padding: 8px 0 5px;
+        }
+
+        &__menu {
+
+            &-list {
+                padding: 0;
+                justify-content: flex-end;
+
+                &-item {
+                    display: inline;
+                    margin-right: 0;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}

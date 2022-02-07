@@ -1,0 +1,29 @@
+.bg-gradient {
+    background-image: $gradientSuperSoft;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    min-width: 345px;
+
+    &::before {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        background-color: #CACADB;
+    }
+
+    &::after {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        background-color: #E7E7F2;
+    }
+}
+

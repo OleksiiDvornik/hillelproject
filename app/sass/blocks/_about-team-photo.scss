@@ -1,0 +1,100 @@
+.about-team-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 114px;
+    background-image: url('../img/about/team-photo-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #9D9DB5;
+    margin-bottom: 31px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        margin-right: -13px;
+    }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+    .about-team-photo {
+        background-image: url('../img/about/team-photo-mobile@2x.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+
+    .about-team-photo {
+        height: 234px;
+        background-image: url('../img/about/team-photo-tablet.jpg');
+        margin-bottom: 61px;
+
+        &__title {
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+            margin-right: -63px;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .about-team-photo {
+        height: 312px;
+        background-image: url('../img/about/team-photo-tablet-hd.jpg');
+        margin-top: 30px;
+        margin-bottom: 61px;
+
+        &__title {
+            font-size: 86px;
+            line-height: 105px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .about-team-photo {
+        height: 438px;
+        background-image: url('../img/about/team-photo-desctop.jpg');
+        margin-top: 30px;
+        margin-bottom: 61px;
+
+        &__title {
+            font-size: 96px;
+            line-height: 117px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+    .about-team-photo {
+        background-image: url('../img/about/team-photo-tablet@2x.jpg');
+    }
+}
+
+@media (min-width: 992px) and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+    .about-team-photo {
+        background-image: url('../img/about/team-photo-tablet-hd@2x.jpg');
+    }
+}
+
+@media (min-width: 1200px) and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+    .about-team-photo {
+        background-image: url('../img/about/team-photo-desctop@2x.jpg');
+    }
+}

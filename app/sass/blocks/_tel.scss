@@ -1,0 +1,15 @@
+.tel {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &--grey {
+        color: $text;
+    }
+
+    &--dark {
+        color: $mainAlt;
+    }
+}

@@ -1,0 +1,29 @@
+.slider-dots {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+        padding: 0 7px;
+    }
+
+    .slider-dots__button {
+        width: 16px;
+        height: 16px;
+        background: rgba(36, 163, 255, 0.2);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        text-indent: 100px;
+        overflow: hidden;
+
+        &:hover {
+            background: rgba(36, 163, 255, 0.6);
+        }
+    }
+
+    .slider-dots__button.active {
+        background: $activeRegular;
+    }
+}
