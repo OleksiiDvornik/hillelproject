@@ -193,7 +193,7 @@ a:hover {
   grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
   grid-template-rows: auto auto;
-  grid-template-areas: "top top" "logo menu";
+  grid-template-areas: "top top" "logo menu";
   position: relative;
   z-index: 2;
 }
@@ -325,7 +325,7 @@ a:hover {
     padding: 40px 0 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "top" "logo" "menu";
+    grid-template-areas: "top" "logo" "menu";
   }
   .header__top {
     -webkit-box-pack: start;
@@ -430,7 +430,7 @@ a:hover {
     padding-top: 43px;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "logo top" "logo menu";
+    grid-template-areas: "logo top" "logo menu";
   }
   .header__top {
     -webkit-box-pack: end;
@@ -895,56 +895,56 @@ a:hover {
   display: block;
 }
 
-.partners__list-item-1 {
+.partners__list-item--1 {
   background-color: #1C4280;
 }
 
-.partners__list-item-2 {
+.partners__list-item--2 {
   background-color: #143646;
 }
 
-.partners__list-item-3 {
+.partners__list-item--3 {
   background-color: #F48B30;
 }
 
-.partners__list-item-4 {
+.partners__list-item--4 {
   background-color: #9E4DC3;
 }
 
-.partners__list-item-5 {
+.partners__list-item--5 {
   background-color: #FD9339;
 }
 
-.partners__list-item-6 {
+.partners__list-item--6 {
   background-color: #E2E2E4;
 }
 
-.partners__list-item-7 {
+.partners__list-item--7 {
   background-color: #C71C36;
   display: none;
 }
 
-.partners__list-item-8 {
+.partners__list-item--8 {
   background-color: #DCF3F9;
   display: none;
 }
 
-.partners__list-item-9 {
+.partners__list-item--9 {
   background-color: #EAEAEA;
   display: none;
 }
 
-.partners__list-item-10 {
+.partners__list-item--10 {
   background-color: #282240;
   display: none;
 }
 
-.partners__list-item-11 {
+.partners__list-item--11 {
   background-color: #1D4568;
   display: none;
 }
 
-.partners__list-item-12 {
+.partners__list-item--12 {
   background-color: #000000;
   display: none;
 }
@@ -1050,7 +1050,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 30px;
-    grid-template-areas: "left right" "bottom bottom";
+    grid-template-areas: "left right" "bottom bottom";
   }
   .publications__list-item {
     display: grid;
